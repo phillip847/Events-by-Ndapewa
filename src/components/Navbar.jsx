@@ -15,10 +15,10 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar navbar-expand-lg fixed-top ${isScrolled ? 'navbar-light bg-white shadow' : 'navbar-dark'}`}>
-      <div className="container">
+      <div className="container-fluid px-3">
         {/* Brand Logo */}
         <a className="navbar-brand fw-bold" href="#home">
-          <span className="text-primary-custom">Event</span>Perfect
+          <span className="text-primary">Event</span>Perfect
         </a>
 
         {/* Mobile Toggle Button */}
@@ -53,7 +53,7 @@ const Navbar = () => {
 
           {/* Contact Button */}
           <div className="d-flex">
-            <a href="#cta" className="btn btn-custom-primary">
+            <a href="#cta" className="btn btn-primary">
               Get Quote
             </a>
           </div>

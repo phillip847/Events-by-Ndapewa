@@ -8,9 +8,9 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CTA from './components/CTA';
 import AboutUs from './components/AboutUs';
-import Services from './components/Services';
-import Packages from './components/Packages';
-import Gallery from './components/Gallery';
+//import Services from './components/Services';
+//import Packages from './components/Packages';
+//import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 
 function App() {
@@ -36,20 +36,6 @@ function App() {
           <AboutUs />
         </section>
 
-        {/* Services Section */}
-        <section id="services" className="py-5">
-          <Services />
-        </section>
-
-        {/* Packages Section */}
-        <section id="packages" className="py-5">
-          <Packages />
-        </section>
-
-        {/* Gallery Section */}
-        <section id="gallery" className="py-5">
-          <Gallery />
-        </section>
       </main>
 
       {/* Footer */}

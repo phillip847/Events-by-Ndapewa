@@ -3,124 +3,68 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="hero-section min-vh-100 d-flex align-items-center">
-      <div className="container-fluid p-0">
-        <div className="row g-0 min-vh-100">
-          {/* Left Content Side */}
-          <div className="col-lg-6 d-flex align-items-center">
-            <div className="hero-content p-5">
+    <section className="min-vh-100 d-flex align-items-center position-relative" style={{
+      backgroundImage: 'url(https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundAttachment: 'fixed'
+    }}>
+      <div className="position-absolute top-0 start-0 w-100 h-100" style={{backgroundColor: 'rgba(0,0,0,0.6)'}}></div>
+      <div className="container-fluid px-3 position-relative" style={{zIndex: 2}}>
+        <div className="row align-items-center min-vh-100 justify-content-center">
+          {/* Content */}
+          <div className="col-12 col-md-10 col-lg-8 col-xl-6">
+            <div className="text-center py-5">
               {/* Brand Logo/Name */}
-              <div className="hero-brand mb-4">
-                <h1 className="display-4 fw-light text-muted mb-1" style={{letterSpacing: '0.2em'}}>
+              <div className="mb-4">
+                <h1 className="display-4 fw-light text-white mb-1" style={{letterSpacing: '0.2em', textShadow: '2px 2px 4px rgba(0,0,0,0.5)'}}>
                   EP
                 </h1>
-                <p className="text-uppercase text-muted" style={{fontSize: '0.9rem', letterSpacing: '0.15em'}}>
+                <p className="text-uppercase text-white" style={{fontSize: '0.9rem', letterSpacing: '0.15em', textShadow: '1px 1px 2px rgba(0,0,0,0.5)'}}>
                   Wedding & Event Planner
                 </p>
               </div>
 
               {/* Main Heading */}
-              <div className="hero-heading mb-4">
-                <h2 className="display-1 fw-light mb-3" style={{
-                  fontSize: 'clamp(3rem, 8vw, 6rem)',
+              <div className="mb-4">
+                <h2 className="display-1 fw-light mb-3 text-white" style={{
+                  fontSize: 'clamp(2.5rem, 8vw, 5rem)',
                   lineHeight: '1.1',
-                  color: '#2c3e50'
+                  textShadow: '3px 3px 6px rgba(0,0,0,0.7)'
                 }}>
-                  Wedding
-                </h2>
-                <h2 className="display-1 fw-light" style={{
-                  fontSize: 'clamp(3rem, 8vw, 6rem)',
-                  lineHeight: '1.1',
-                  color: '#2c3e50'
-                }}>
-                  Planner
+                  Wedding Planner
                 </h2>
               </div>
 
               {/* Decorative Line */}
-              <div className="hero-divider mb-4">
-                <div style={{
-                  width: '80px',
-                  height: '3px',
-                  background: 'linear-gradient(90deg, #d4af37, #f4d03f)',
-                  marginBottom: '2rem'
-                }}></div>
+              <div className="d-flex justify-content-center mb-4">
+                <hr className="border-primary" style={{width: '80px', height: '3px', backgroundColor: '#0d6efd'}} />
               </div>
 
               {/* Description */}
-              <div className="hero-description mb-5">
-                <p className="lead text-muted" style={{
-                  fontSize: '1.1rem',
+              <div className="mb-5">
+                <p className="lead text-white mx-auto" style={{
+                  fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
                   lineHeight: '1.7',
-                  maxWidth: '500px'
+                  maxWidth: '600px',
+                  textShadow: '1px 1px 3px rgba(0,0,0,0.7)'
                 }}>
-                  We specialize in turning your wedding dreams into enchanting realities. With a passion for meticulous planning and an eye for exquisite details, we're dedicated to curating unforgettable experiences that reflect your unique love story.
+                  We specialize in turning your wedding dreams into enchanting realities. With a passion for meticulous planning and an eye for exquisite details.
                 </p>
               </div>
 
               {/* CTA Buttons */}
-              <div className="hero-cta">
-                <a href="#packages" className="btn btn-custom-primary me-3 mb-2">
+              <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                <a href="#packages" className="btn btn-primary btn-lg px-4">
                   View Packages
                 </a>
-                <a href="#gallery" className="btn btn-outline-custom mb-2">
+                <a href="#gallery" className="btn btn-outline-light btn-lg px-4">
                   View Gallery
                 </a>
               </div>
             </div>
           </div>
-
-          {/* Right Image Side */}
-          <div className="col-lg-6">
-            <div className="hero-image-container h-100 position-relative">
-              {/* Placeholder for main image - replace with your actual image */}
-              <div className="hero-image h-100" style={{
-                backgroundImage: 'url(https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center center',
-                backgroundRepeat: 'no-repeat'
-              }}>
-                {/* Overlay for better text contrast if needed */}
-                <div className="hero-overlay position-absolute top-0 start-0 w-100 h-100" style={{
-                  background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.1) 100%)'
-                }}></div>
-              </div>
-
-              {/* Decorative Elements */}
-              <div className="position-absolute top-0 end-0 p-4">
-                <div style={{
-                  width: '60px',
-                  height: '60px',
-                  border: '2px solid rgba(255,255,255,0.3)',
-                  borderRadius: '50%'
-                }}></div>
-              </div>
-
-              <div className="position-absolute bottom-0 start-0 p-4">
-                <div style={{
-                  width: '40px',
-                  height: '40px',
-                  background: 'rgba(212, 175, 55, 0.3)',
-                  borderRadius: '50%'
-                }}></div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-
-      {/* Decorative leaves/floral elements - CSS only */}
-      <div className="hero-decorations">
-        <div className="position-absolute" style={{
-          top: '10%',
-          left: '5%',
-          width: '100px',
-          height: '100px',
-          background: 'url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0yMCA4MEwzMCA0MEw2MCA2MEw4MCAyMEw2MCA4MEw0MCA2MEwxMCA0MEwyMCA4MFoiIGZpbGw9IiNkNGFmMzciIGZpbGwtb3BhY2l0eT0iMC4yIi8+Cjwvc3ZnPgo=) no-repeat center',
-          backgroundSize: 'contain',
-          opacity: '0.6',
-          zIndex: '1'
-        }}></div>
       </div>
     </section>
   );
