@@ -26,14 +26,14 @@ function App() {
           <Hero />
         </section>
 
-        {/* Call to Action Section */}
-        <section id="cta" className="py-5">
-          <CTA />
-        </section>
-
         {/* About Us Section */}
         <section id="about" className="py-5">
           <AboutUs />
+        </section>
+
+        {/* Call to Action Section */}
+        <section id="cta" className="py-5">
+          <CTA />
         </section>
 
       </main>
