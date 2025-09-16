@@ -1,27 +1,13 @@
-// components/Navbar.jsx
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <nav className={`navbar navbar-expand-lg fixed-top ${isScrolled ? 'navbar-light bg-white shadow' : 'navbar-dark'}`}>
-      <div className="container-fluid px-3">
-        {/* Brand Logo */}
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div className="container-fluid">
         <a className="navbar-brand fw-bold" href="#home">
           <span className="text-primary">Event</span>Perfect
         </a>
-
-        {/* Mobile Toggle Button */}
+        
         <button 
           className="navbar-toggler" 
           type="button" 
@@ -30,8 +16,7 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-
-        {/* Navigation Links */}
+        
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
@@ -49,9 +34,11 @@ const Navbar = () => {
             <li className="nav-item">
               <a className="nav-link" href="#gallery">Gallery</a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#cta">Contact</a>
+            </li>
           </ul>
-
-          {/* Contact Button */}
+          
           <div className="d-flex">
             <a href="#cta" className="btn btn-primary">
               Get Quote
