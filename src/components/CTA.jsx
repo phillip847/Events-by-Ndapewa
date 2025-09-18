@@ -46,12 +46,14 @@ const CTA = () => {
       boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
     },
     pinkHeading: {
-      color: '#881337',
-      filter: 'drop-shadow(1px 1px 2px rgba(0,0,0,0.1))'
+      color: '#be185d',
+      filter: 'drop-shadow(2px 2px 4px rgba(0,0,0,0.3))',
+      fontWeight: 'bold'
     },
     pinkText: {
-      color: '#831843',
-      fontWeight: '500'
+      color: '#be185d',
+      fontWeight: '600',
+      filter: 'drop-shadow(1px 1px 2px rgba(0,0,0,0.2))'
     }
   };
 
