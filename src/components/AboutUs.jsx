@@ -274,10 +274,9 @@ const AboutUs = () => {
         {/* Statistics Cards */}
         <div className="row g-3 mb-5">
           {[
-            { number: "10+", label: "Years Experience", icon: "⭐" },
-            { number: "300+", label: "Events Planned", icon: "🎉" },
-            { number: "250+", label: "Happy Couples", icon: "💕" },
-            { number: "12", label: "Awards Won", icon: "🏆" }
+            { number: "4+", label: "Years Experience", icon: "⭐" },
+            { number: "30+", label: "Events Planned", icon: "🎉" },
+            { number: "30+", label: "Happy Couples", icon: "💕" }
           ].map((stat, index) => (
             <div key={index} className="col-6 col-lg-3">
               <div 
