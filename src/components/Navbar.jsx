@@ -43,8 +43,19 @@ const Navbar = () => {
             </li>
           </ul>
           
-          <div className="d-flex">
-            <a href="#cta" onClick={closeNavbar} className="btn btn-primary rounded-pill px-4 fw-semibold shadow" style={{transition: 'all 0.3s ease'}} onMouseEnter={(e) => {e.target.style.transform = 'translateY(-3px)'; e.target.style.boxShadow = '0 6px 20px rgba(0,123,255,0.4)'}} onMouseLeave={(e) => {e.target.style.transform = 'translateY(0)'; e.target.style.boxShadow = '0 4px 15px rgba(0,123,255,0.3)'}}>
+          <div className="d-flex align-items-center gap-3">
+            <a 
+              href="https://www.instagram.com/events_byndapewa?igsh=OTJvMm01dmVvb2g1" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-decoration-none"
+              style={{color: '#ec4899', fontSize: '1.5rem', transition: 'all 0.3s ease'}}
+              onMouseEnter={(e) => {e.target.style.transform = 'scale(1.2)'; e.target.style.color = '#be185d'}}
+              onMouseLeave={(e) => {e.target.style.transform = 'scale(1)'; e.target.style.color = '#ec4899'}}
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="#cta" onClick={closeNavbar} className="btn rounded-pill px-4 fw-semibold shadow" style={{background: 'linear-gradient(to right, #ec4899, #f43f5e)', border: 'none', color: 'white', transition: 'all 0.3s ease'}} onMouseEnter={(e) => {e.target.style.transform = 'translateY(-3px)'; e.target.style.boxShadow = '0 6px 20px rgba(236, 72, 153, 0.4)'}} onMouseLeave={(e) => {e.target.style.transform = 'translateY(0)'; e.target.style.boxShadow = '0 4px 15px rgba(236, 72, 153, 0.3)'}}>
               Get Quote
             </a>
           </div>

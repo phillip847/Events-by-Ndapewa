@@ -8,7 +8,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CTA from './components/CTA';
 import AboutUs from './components/AboutUs';
-//import Services from './components/Services';
+import Services from './components/Services';
 //import Packages from './components/Packages';
 //import Gallery from './components/Gallery';
 import Footer from './components/Footer';
@@ -29,6 +29,10 @@ function App() {
         {/* About Us Section */}
         <section id="about">
           <AboutUs />
+        </section>
+
+        <section id="services">
+          <Services />
         </section>
 
         {/* Call to Action Section */}

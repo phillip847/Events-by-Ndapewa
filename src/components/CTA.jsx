@@ -17,7 +17,8 @@ const CTA = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Thank you for your inquiry!');
+    const message = `Hello! I'm interested in your event planning services.%0A%0AName: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0AMessage: ${formData.message}`;
+    window.open(`https://wa.me/message/HUEBKXOM7NKOI1?text=${message}`, '_blank');
   };
 
   return (
@@ -34,12 +35,13 @@ const CTA = () => {
             <p className="lead mb-4">Let's bring your vision to life. Get in touch with us today for a personalized consultation.</p>
             <div className="row">
               <div className="col-md-6 mb-3">
-                <h5 className="text-primary">Call Us</h5>
-                <p className="mb-0">+1 (234) 567-8900</p>
+                <h5 style={{color: '#ec4899'}}>Call Us</h5>
+                <p className="mb-0">0817700348</p>
+                <p className="mb-0">0812448543</p>
               </div>
               <div className="col-md-6 mb-3">
-                <h5 className="text-primary">Email Us</h5>
-                <p className="mb-0">info@eventperfect.com</p>
+                <h5 style={{color: '#ec4899'}}>Email Us</h5>
+                <p className="mb-0">ndapewaevents@gmail.com</p>
               </div>
             </div>
           </div>
@@ -90,7 +92,7 @@ const CTA = () => {
                       onChange={handleInputChange}
                     ></textarea>
                   </div>
-                  <button type="submit" className="btn btn-primary btn-lg w-100">
+                  <button type="submit" className="btn btn-lg w-100" style={{background: 'linear-gradient(to right, #ec4899, #f43f5e)', border: 'none', color: 'white'}}>
                     Send My Request
                   </button>
                 </form>
