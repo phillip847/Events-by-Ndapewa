@@ -1,9 +1,11 @@
 // App.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 // Import all components
+import Loader from './components/Loader';
+import BackToTop from './components/BackToTop';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CTA from './components/CTA';
@@ -14,6 +16,20 @@ import Services from './components/Services';
 import Footer from './components/Footer';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <div className="App">
       {/* Navigation */}
@@ -44,6 +60,9 @@ function App() {
 
       {/* Footer */}
       <Footer />
+      
+      {/* Back to Top Button */}
+      <BackToTop />
     </div>
   );
 }
