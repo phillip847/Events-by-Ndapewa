@@ -11,9 +11,9 @@ const Hero = () => {
       <div className="container-fluid px-3 px-md-5 text-center text-white">
         <div className="row justify-content-center">
           <div className="col-lg-8">
-            <h1 className="display-2 fw-bold mb-4">EventPerfect</h1>
+            <h1 className="display-2 fw-bold mb-4">Ndapewa Events</h1>
             <h2 className="h3 mb-4">Wedding & Event Planning</h2>
-            <p className="lead mb-5">We specialize in turning your wedding dreams into enchanting realities with meticulous planning and attention to detail.</p>
+            <p className="lead mb-5">luxury wedding and event planning company where elegance meets intention.</p>
             <div className="d-flex flex-column flex-sm-row gap-3 justify-content-center">
               <a href="#about" className="btn btn-primary btn-lg px-4">Learn More</a>
               <a href="#cta" className="btn btn-outline-light btn-lg px-4">Get Quote</a>
