@@ -27,12 +27,12 @@ function App() {
         </section>
 
         {/* About Us Section */}
-        <section id="about" className="py-5">
+        <section id="about">
           <AboutUs />
         </section>
 
         {/* Call to Action Section */}
-        <section id="cta" className="py-5">
+        <section id="cta">
           <CTA />
         </section>
 

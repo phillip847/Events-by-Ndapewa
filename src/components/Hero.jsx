@@ -8,7 +8,7 @@ const Hero = () => {
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed'
     }}>
-      <div className="container text-center text-white">
+      <div className="container-fluid px-3 px-md-5 text-center text-white">
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <h1 className="display-2 fw-bold mb-4">EventPerfect</h1>

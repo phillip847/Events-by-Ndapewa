@@ -27,7 +27,7 @@ const CTA = () => {
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed'
     }}>
-      <div className="container">
+      <div className="container-fluid px-3 px-md-5">
         <div className="row align-items-center">
           <div className="col-lg-6 mb-4 mb-lg-0">
             <h2 className="display-4 mb-4">Ready to Plan Your Perfect Event?</h2>

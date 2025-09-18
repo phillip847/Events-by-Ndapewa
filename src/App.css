@@ -1,1 +1,47 @@
-/* Pure Bootstrap - No custom CSS */
+/* Mobile-first responsive design */
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure full width containers */
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .lead {
+    font-size: 1rem;
+  }
+  
+  .card {
+    margin: 0 15px;
+  }
+  
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 1.75rem;
+  }
+  
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

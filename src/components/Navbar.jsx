@@ -1,11 +1,12 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top" style={{backgroundColor: '#F5DEB3'}}>
       <div className="container-fluid">
-        <a className="navbar-brand fw-bold" href="#home">
-          <span className="text-primary">Event</span>Perfect
+        <a className="navbar-brand ms-3" href="#home">
+          <img src={logo} alt="EventPerfect" height="60" style={{opacity: 0.8}} />
         </a>
         
         <button 
