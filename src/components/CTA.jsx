@@ -21,34 +21,63 @@ const CTA = () => {
     window.open(`https://wa.me/message/HUEBKXOM7NKOI1?text=${message}`, '_blank');
   };
 
-  return (
-    <section className="py-5" style={{
-      background: 'linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url(https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80)',
+  const styles = {
+    container: {
+      minHeight: '100vh',
+      position: 'relative',
+      overflow: 'hidden'
+    },
+    backgroundImage: {
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundImage: `linear-gradient(rgba(255, 182, 193, 0.3), rgba(255, 20, 147, 0.4)), url('https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed'
-    }}>
-      <div className="container-fluid px-3 px-md-5">
+    },
+    glassCard: {
+      backdropFilter: 'blur(16px)',
+      backgroundColor: 'rgba(255, 255, 255, 0.2)',
+      border: '1px solid rgba(255, 255, 255, 0.3)',
+      borderRadius: '1.5rem',
+      boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
+    },
+    pinkHeading: {
+      color: '#881337',
+      filter: 'drop-shadow(1px 1px 2px rgba(0,0,0,0.1))'
+    },
+    pinkText: {
+      color: '#831843',
+      fontWeight: '500'
+    }
+  };
+
+  return (
+    <section className="py-5 d-flex align-items-center" style={styles.container}>
+      <div style={styles.backgroundImage}></div>
+      <div className="container-fluid px-3 px-md-5" style={{position: 'relative', zIndex: 10}}>
         <div className="row align-items-center">
           <div className="col-lg-6 mb-4 mb-lg-0">
-            <h2 className="display-4 mb-4">Ready to Plan Your Perfect Event?</h2>
-            <p className="lead mb-4">Let's bring your vision to life. Get in touch with us today for a personalized consultation.</p>
+            <h2 className="display-4 fw-bold mb-4" style={styles.pinkHeading}>Ready to Plan Your Perfect Event?</h2>
+            <p className="lead mb-4" style={styles.pinkText}>Let's bring your vision to life. Get in touch with us today for a personalized consultation.</p>
             <div className="row">
               <div className="col-md-6 mb-3">
-                <h5 style={{color: '#ec4899'}}>Call Us</h5>
-                <p className="mb-0">0817700348</p>
-                <p className="mb-0">0812448543</p>
+                <h5 style={{color: '#ec4899', fontWeight: 'bold'}}>Call Us</h5>
+                <p className="mb-0" style={styles.pinkText}>0817700348</p>
+                <p className="mb-0" style={styles.pinkText}>0812448543</p>
               </div>
               <div className="col-md-6 mb-3">
-                <h5 style={{color: '#ec4899'}}>Email Us</h5>
-                <p className="mb-0">ndapewaevents@gmail.com</p>
+                <h5 style={{color: '#ec4899', fontWeight: 'bold'}}>Email Us</h5>
+                <p className="mb-0" style={styles.pinkText}>ndapewaevents@gmail.com</p>
               </div>
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="card shadow">
-              <div className="card-body p-4">
-                <h3 className="mb-4 text-center">Get Your Free Quote</h3>
+            <div className="p-4" style={styles.glassCard}>
+                <h3 className="mb-4 text-center" style={styles.pinkHeading}>Get Your Free Quote</h3>
                 <form onSubmit={handleSubmit}>
                   <div className="mb-3">
                     <input
@@ -92,11 +121,22 @@ const CTA = () => {
                       onChange={handleInputChange}
                     ></textarea>
                   </div>
-                  <button type="submit" className="btn btn-lg w-100" style={{background: 'linear-gradient(to right, #ec4899, #f43f5e)', border: 'none', color: 'white'}}>
+                  <button 
+                    type="submit" 
+                    className="btn btn-lg w-100" 
+                    style={{background: 'linear-gradient(to right, #ec4899, #f43f5e)', border: 'none', color: 'white', borderRadius: '9999px', fontWeight: '600', transition: 'all 0.3s ease', boxShadow: '0 4px 14px 0 rgba(236, 72, 153, 0.39)'}}
+                    onMouseEnter={(e) => {
+                      e.target.style.transform = 'scale(1.05)';
+                      e.target.style.boxShadow = '0 8px 25px 0 rgba(236, 72, 153, 0.5)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.style.transform = 'scale(1)';
+                      e.target.style.boxShadow = '0 4px 14px 0 rgba(236, 72, 153, 0.39)';
+                    }}
+                  >
                     Send My Request
                   </button>
                 </form>
-              </div>
             </div>
           </div>
         </div>
