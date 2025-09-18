@@ -206,10 +206,13 @@ const AboutUs = () => {
                     at the center of every unforgettable event.
                   </p>
                   
-                  {/* CTA Button */}
-                  <div className="pt-3">
-                    <button 
-                      style={styles.buttonGradient}
+                  {/* CTA Buttons */}
+                  <div className="pt-3 d-flex gap-3 flex-wrap">
+                    <a 
+                      href="https://wa.me/message/HUEBKXOM7NKOI1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{...styles.buttonGradient, textDecoration: 'none', display: 'inline-block'}}
                       onMouseOver={(e) => {
                         e.target.style.transform = 'scale(1.05)';
                         e.target.style.boxShadow = '0 8px 25px 0 rgba(236, 72, 153, 0.5)';
@@ -217,6 +220,19 @@ const AboutUs = () => {
                       onMouseOut={(e) => {
                         e.target.style.transform = 'scale(1)';
                         e.target.style.boxShadow = '0 4px 14px 0 rgba(236, 72, 153, 0.39)';
+                      }}
+                    >
+                      Get a Quote
+                    </a>
+                    <button 
+                      style={{...styles.buttonGradient, background: 'linear-gradient(to right, #be185d, #831843)'}}
+                      onMouseOver={(e) => {
+                        e.target.style.transform = 'scale(1.05)';
+                        e.target.style.boxShadow = '0 8px 25px 0 rgba(190, 24, 93, 0.5)';
+                      }}
+                      onMouseOut={(e) => {
+                        e.target.style.transform = 'scale(1)';
+                        e.target.style.boxShadow = '0 4px 14px 0 rgba(190, 24, 93, 0.39)';
                       }}
                     >
                       Learn More About Us
