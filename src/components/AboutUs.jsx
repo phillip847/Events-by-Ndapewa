@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import aboutImage from '../assets/about.jpeg';
 
 const AboutUs = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -248,7 +249,7 @@ const AboutUs = () => {
                     onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
                   >
                     <img 
-                      src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                      src={aboutImage}
                       alt="Luxury wedding setup"
                       className="img-fluid"
                       style={{height: '400px', width: '100%', objectFit: 'cover'}}
