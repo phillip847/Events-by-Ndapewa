@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import heroImage from '../assets/hero.jpeg';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,7 +20,7 @@ const Hero = () => {
       left: 0,
       right: 0,
       bottom: 0,
-      backgroundImage: `linear-gradient(rgba(255, 182, 193, 0.4), rgba(255, 20, 147, 0.5)), url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')`,
+      backgroundImage: `linear-gradient(rgba(255, 182, 193, 0.4), rgba(255, 20, 147, 0.5)), url(${heroImage})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed'
